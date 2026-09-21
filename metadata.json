@@ -1,0 +1,6 @@
+{
+  "name": "Bears4Profit",
+  "description": "High-performance yield engine, daily lucky spin wheel, investment plans, and gamer trading profile.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

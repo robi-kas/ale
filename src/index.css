@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Custom dashed rotating border effect for avatar */
+  .avatar-dashed-ring {
+    background-image: repeating-conic-gradient(#b4f02a 0deg 18deg, transparent 18deg 36deg);
+    border-radius: 9999px;
+    padding: 3px;
+    animation: rotateSlow 24s linear infinite;
+  }
+
+  /* Soft neon glow utilities */
+  .neon-shadow {
+    box-shadow: 0 0 20px -2px rgba(180, 240, 42, 0.45);
+  }
+
+  .neon-glow-lg {
+    box-shadow: 0 0 28px rgba(180, 240, 42, 0.65);
+  }
+
+  .card-border-subtle {
+    border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  /* Feature card gradient matching reference */
+  .feature-card-gradient {
+    background: radial-gradient(circle at 85% 15%, rgba(180, 240, 42, 0.22) 0%, rgba(20, 22, 28, 0.95) 45%),
+                linear-gradient(145deg, #2a1b4e 0%, #151829 45%, #0e1017 100%);
+  }
+
+  .peek-card-gradient {
+    background: linear-gradient(160deg, #1f2230 0%, #12131a 100%);
+  }
+}
+
+@keyframes rotateSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide scrollbars for app-like clean look */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-tap-highlight-color: transparent;
+}
